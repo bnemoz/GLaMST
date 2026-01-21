@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_backend"
+
+[project]
+name = "glamst"
+version = "0.1.0"
+description = "Grow Lineages along Minimum Spanning Tree - Python implementation"
+authors = [{name = "Benjamin"}]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.24.0",
+    "scipy>=1.10.0",
+    "biopython>=1.81",
+    "python-Levenshtein>=0.21.0",
+    "numba>=0.57.0",
+    "networkx>=3.0",
+    "tqdm>=4.65.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.3.0",
+    "matplotlib>=3.7.0",
+]
+
+[project.scripts]
+glamst = "glamst.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["glamst*"]

@@ -1,0 +1,10 @@
+numpy>=1.24.0
+scipy>=1.10.0
+biopython>=1.81
+python-Levenshtein>=0.21.0
+numba>=0.57.0
+networkx>=3.0
+pandas>=2.0.0
+matplotlib>=3.7.0
+tqdm>=4.65.0
+pytest>=7.3.0
